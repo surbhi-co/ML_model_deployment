@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-data = pd.read_csv("G:\data sets\online_shoppers_intention.csv")
+data = pd.read_csv("...\"online_shoppers_intention.csv")
 print(data)
 
 # dropping the unwanted columns/columns having vague information
