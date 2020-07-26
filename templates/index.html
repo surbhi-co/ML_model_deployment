@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict the intention of an online shopper</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Administrative" placeholder="no. of administrative pages visited" required="required" />
+        <input type="text" name="Administrative_Duration" placeholder="time spent(decimal) on administrative" required="required" />
+		<input type="text" name="Informational" placeholder="no. of informational pages visited" required="required" />
+        <input type="text" name="Informational_Duration" placeholder="time spent(decimal) on informational" required="required" />
+        <input type="text" name="ProductRelated" placeholder="no. of ProductRelated pages visited" required="required" />
+        <input type="text" name="ProductRelated_Duration" placeholder="time spent(decimal) on Productrelated" required="required" />
+        <input type="text" name="BounceRates" placeholder="BounceRates of the website" required="required" />
+        <input type="text" name="ExitRates" placeholder="ExitRates of the website" required="required" />
+        <input type="text" name="SpecialDay" placeholder="how close was the visiting day close to a special day " required="required" />
+        <input type="text" name="Weekend" placeholder="'1'for weekend and '0' if not" required="required" />
+        <input type="text" name="VisitorType_New_Visitor" placeholder="'1' for new visitor('0' if not)" required="required" />
+        <input type="text" name="VisitorType_Other" placeholder="'1' for othertype of visitor " required="required" />
+        <input type="text" name="VisitorType_Returning_Visitor" placeholder="'1' for returning_visitor and '0' if not" required="required" />
+        <input type="text" name="Month_Aug" placeholder="'1' (visiting month august) and '0' if not" required="required" />
+        <input type="text" name="Month_Dec" placeholder="'1' (visiting month December) and '0' if not" required="required" />
+        <input type="text" name="Month_Feb" placeholder="'1' (visiting month february)  and '0' if not" required="required" />
+        <input type="text" name="Month_Jul" placeholder="'1' (visiting month july) and '0' if not" required="required" />
+        <input type="text" name="Month_June" placeholder="'1' (visiting month june) and '0' if not" required="required" />
+        <input type="text" name="Month_Mar" placeholder="'1' (Month_Mar) and '0' if not" required="required" />
+        <input type="text" name="Month_May" placeholder="'1' (visiting month may) and '0' if not" required="required" />
+        <input type="text" name="Month_Nov" placeholder="'1' (visiting month November) and '0' if not" required="required" />
+        <input type="text" name="Month_Oct" placeholder="'1' (visiting month october) and '0' if not" required="required" />
+        <input type="text" name="Month_Sep" placeholder="'1' (visiting month september) and '0' if not" required="required" />
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
