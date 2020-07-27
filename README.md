@@ -1,17 +1,17 @@
 # Online_shopper's_intention_ML_model
 
  ## Problem statement 
- Given a dataset consisting of a no. of sessions of users along with certain attributes,We need to predict whether a session would end with shopping or not.
+ Given a dataset consisting of a no. of sessions of users along with certain attributes,We need to predict whether a session would end with a purchase or not.
 
  ## Dataset Dictionary
  The data set consists of 12330 sessions, along with 18 attributes.
  Each session belongs to a different user in a 1-year period.
  
- ATTRIBUTES
-## Administrative: *No. of adiministrative pages visted by the user in a session.*
-## Administrative Duration : *Time spent on the administrative pages by the user in a session.*
-## Informational : *No. of Informational pages visted by the user in a session.*
-## Informational Duration : *Time spent on the Informational pages by the user in a session.*
+ ## ATTRIBUTES
+Administrative: *No. of adiministrative pages visted by the user in a session.*
+Administrative Duration : *Time spent on the administrative pages by the user in a session.*
+Informational : *No. of Informational pages visted by the user in a session.*
+Informational Duration : *Time spent on the Informational pages by the user in a session.*
 ## Product Related : *No. of Product Related pages visted by the user in a session.*
 ## Product Related Duration :*Time spent on the Product related pages by the user in a session.*
 ## Bounce Rate: *Refers to the percentage of visitors who enter the site from that page and then left without triggering any other requests during that session.
@@ -25,6 +25,7 @@
 ## visitor type : *category of user type, such as returning or new user.* 
 ## Weekend : *a Boolean value indicating whether the date of the visit is weekend*
 ## Month : *month of the year for the session.*
+## Revenue :*Boolean representing whether purchase happened or not*  
 
 ## NOTE: 
 Some columns have been dropped due to the lack of information on the value they hold such as traffic type, browser, region, operating system do not specify what exactly the integers signify.
