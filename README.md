@@ -9,9 +9,13 @@
  
  ## ATTRIBUTES
 Administrative: *No. of adiministrative pages visted by the user in a session.*
+
 Administrative Duration : *Time spent on the administrative pages by the user in a session.*
+
 Informational : *No. of Informational pages visted by the user in a session.*
+
 Informational Duration : *Time spent on the Informational pages by the user in a session.*
+
 ## Product Related : *No. of Product Related pages visted by the user in a session.*
 ## Product Related Duration :*Time spent on the Product related pages by the user in a session.*
 ## Bounce Rate: *Refers to the percentage of visitors who enter the site from that page and then left without triggering any other requests during that session.
