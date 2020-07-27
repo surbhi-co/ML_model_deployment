@@ -44,7 +44,7 @@ Month : *month of the year for the session.*
 
 Revenue :*Boolean representing whether purchase happened or not*  
 
-##NOTE: 
+## NOTE: 
 Some columns have been dropped due to the lack of information on the value they hold such as traffic type, browser, region, operating system do not specify what exactly the integers signify.
 
 The code forms the part of the procedure to preprocess the data and predict the label which in this case is the *Revenue* column.
